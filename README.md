@@ -20,7 +20,8 @@ e configure uma função do AWS Identity and Access Management (IAM) e anexe pol
 adequadas à função para que o provedor de credenciais possa assumir a função em seu nome. Para obter
 mais informações sobre AWS IoT Core e IAM, consulte Identity and Access Management para o AWS
 IoT. <BR>
-O diagrama a seguir mostra o fluxo de trabalho do provedor de credenciais.
+ 
+<h3> O diagrama a seguir mostra o fluxo de trabalho do provedor das credenciais: <BR>
 
 <div align="center">
 
