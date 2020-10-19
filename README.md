@@ -5,24 +5,28 @@
 Os dispositivos podem usar certificados X.509 para se conectar ao AWS IoT Core usando protocolos de
 autenticação mútua TLS. Outros serviços da AWS não são compatíveis com autenticação realizada por
 meio de certificado, mas podem ser chamados usando credenciais da AWS no formato do AWS Signature
-versão 4. 
+versão 4. <BR>
 O algoritmo do Signature versão 4 normalmente exige que o chamador tenha um ID de chave
 de acesso e uma chave de acesso secreta. 
 O AWS IoT Core tem um provedor de credenciais que permite
 usar o certificado X.509 integrado como o dispositivo exclusivo de identidade para autenticar solicitações
 da AWS. Isso elimina a necessidade de armazenar um ID de chave de acesso e uma chave de acesso
-secreta em seu dispositivo.
+secreta em seu dispositivo. <BR>
 O provedor de credenciais autentica um chamador usando um certificado X.509 e emite um token de
 segurança temporário e de privilégio limitado. Esse token pode ser usado para assinar e autenticar
-qualquer solicitação da AWS. 
+qualquer solicitação da AWS. <BR>
 Essa forma de autenticar solicitações da AWS requer que você crie
 e configure uma função do AWS Identity and Access Management (IAM) e anexe políticas do IAM
 adequadas à função para que o provedor de credenciais possa assumir a função em seu nome. Para obter
 mais informações sobre AWS IoT Core e IAM, consulte Identity and Access Management para o AWS
-IoT.
+IoT. <BR>
 O diagrama a seguir mostra o fluxo de trabalho do provedor de credenciais.
 
+<div align="center">
 
+![Key](https://raw.githubusercontent.com/fernandozoomp/Regras_AWSCore/main/Data_AWS/Key_AWS.png)
+
+</div>
  
 ## Criando regras para rotear dados dos dispositivos conectados
 
